@@ -37,7 +37,9 @@ export default function App () {
       <SavedList list={[ /* This is stretch */]} />
 
       <Link></Link>
-      <Route exact path='/' component={MovieList}/>
+      <Route exact path='/'>
+        <MovieList movies={movieList}/>
+      </Route>
       
     </div>
   );
